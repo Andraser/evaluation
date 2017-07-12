@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <style type="text/css">
+            body{background-color: gray;}
+            button{display:inline-block;padding:20px;margin:30px;}
+            #rectangle{align-content: center;}
+        </style>
+    </head>
+    <body>
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+        <button>Button 4</button>
+        <button>Button 5</button>
+
+       <canvas id="rectangle" width="300" height="300"></canvas>
+        <script type="text/javascript">
+            
+            //création du rectangle
+            var c = document.getElementById("rectangle");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "blue";
+            ctx.rect(20, 20, 150, 100);
+            ctx.fill();
+
+            //declaration de variable pour les boutons
+
+                let taille 
+
+                // button - 1 
+             
+
+                // button - 2 
+                let changecolor = document.getElementById("rectangle");
+                
+                
+                // button - 3 
+                let colorInit = document.getElementById("rectangle");
+            
+                // button - 4
+                let hide = document.getElementById("rectangle");
+        
+
+                // button - 5
+                let show = document.getElementById("rectangle");
+               
+           
+
+        </script>
+
+    </body>
+</html>

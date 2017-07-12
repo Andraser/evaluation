@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style type="text/css">
+        body {
+            background-color: gray;
+        }
+        
+        li.link ul {
+            display: none;
+        }
+        
+        li.link:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+<!-- creation du dropdown -->
+   
+    <ul id="dropdown">
+        <li class="link">
+            <a href="#">Menu 1</a>
+            <ul>
+                <li>hey</li>
+                <li>hey</li>
+                <li>hey</li>
+            </ul>
+        </li>
+        <li class="link">
+            <a href="#">Menu 2</a>
+            <ul>
+                <li>hey</li>
+                <li>hey</li>
+                <li>hey</li>
+            </ul>
+        </li>
+    </ul>
+    <li class="link">
+        <a href="#">Menu 3</a>
+        <ul>
+            <li>hey</li>
+            <li>hey</li>
+            <li>hey</li>
+        </ul>
+    </li>
+
+
+    <script type="text/javascript">
+        // initialisation du jquery
+        $(document).ready(function() {
+            
+            //fonction pour faire deroulé le menu au passage de la souris
+            $('li.headlink').hover(
+                function() {
+                    $('ul', this).css('display', 'block');
+                },
+                function() {
+                    $('ul', this).css('display', 'none');
+                });
+        });
+    </script>
+
+</body>
+</html>
